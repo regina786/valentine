@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Special 💖</title>
+<link rel="stylesheet" href="/Css/val.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💘 Happy Valentine's Day 💘</h1>
+
+<div class="question-box" id="q1" style="background-image:url('img1.jpg')">
+<p>1. Do you love me? 😍</p>
+<button onclick="next()">Yes</button>
+<button onclick="showError()">No</button>
+
+</div>
+
+<div class="question-box hidden" id="q2" style="background-image:url('img2.jpg')">
+<p>2. Will you stay with me forever? 💑</p>
+<button onclick="next()">Yes</button>
+<button onclick="showError()">No</button>
+
+</div>
+
+<div class="question-box hidden" id="q3">
+<p>3. Where we meet at first? 😍</p>
+
+<button class="opt" onclick="checkAns(this,true)">A. Riyas veedu</button>
+<button class="opt" onclick="checkAns(this,false)">B. Peruma veedu</button>
+<button class="opt" onclick="checkAns(this,false)">C. Tik Tok Video</button>
+<button class="opt" onclick="checkAns(this,false)">D. Bus Stand</button>
+
+</div>
+
+
+<div class="question-box hidden" id="q4">
+<p>4. Where should we go for a date? 💑</p>
+
+<button class="opt" onclick="checkAns(this,true)">A. Burj Khalifa 🗼</button>
+<button class="opt" onclick="checkAns(this,true)">B. Beach 🌊</button>
+<button class="opt" onclick="checkAns(this,true)">C. Candle Light Dinner🕯️</button>
+<button class="opt" onclick="checkAns(this,true)">D. Shopping 🛍️</button>
+
+</div>
+
+
+<div class="question-box hidden" id="q5" style="background-image:url('img5.jpg')">
+<p>5. Type some words thing you love about me ❤️</p>
+<input type="text" placeholder="Type here..." id="finalAnswer">
+<button onclick="showResult()">Done</button>
+</div>
+
+<div class="hidden" id="result">
+<h2>💖 I Love You Forever 💖</h2>
+</div>
+
+</div>
+<div class="popup hidden" id="lovePopup">
+<div class="popup-content">
+<h2>💖 Happy Valentine’s Day 💖</h2>
+<p>You are my favorite person forever ❤️</p>
+<p>I Love You Kuttyma...💋💋💋</p>
+<button onclick="closePopup()">Close</button>
+</div>
+</div>
+</div>
+<div id="errorPopup" class="custom-alert hidden">
+  <div class="alert-box">
+    <p>Wrong answer!!!😤 <br> Only Yes!!!</p>
+    <button onclick="closeError()">Okay</button>
+  </div>
+</div>
+
+
+<!-- FALLING HEARTS -->
+<div class="hearts"></div>
+
+<script src="/Java Script/love.js"></script>
+</body>
+</html>
